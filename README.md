@@ -4,11 +4,13 @@ Mastodon Column Fix
 
 **If you are not a mastodon.social user, you must edit this style once you've installed it to apply on your instance's domain** (I wish I could've made that a variable too, but stylus was having none of it)
 
-A quick fix to mastodon's ugly columns that makes them fit to screen. Lets you set the width of the drawer (where you post from) and the min-width (width at which they no longer fit to screen) for columns.
+A quick fix to mastodon's ugly columns that makes them fit to screen. Lets you set the width of the drawer (where you post from) and the max-width and min-width (width at which they no longer fit to screen) for columns.
 
 Screenshots
 ---
 (I have a fairly small screen, so cut me some slack here)
+
+Also, you can set a column max width now, if you think it's ugly to have the columns stretch all the way across the screen (default: 600px)
 
 Two columns:
 
