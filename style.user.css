@@ -17,8 +17,8 @@
     width: var(--drawerWidth);
   }
   .column {
-    min-width: var(--minWidth)
-    max-width: var(--maxWidth)
+    min-width: var(--minWidth);
+    max-width: var(--maxWidth);
   }
   .columns-area > div:nth-last-child(3):first-child ~ .column {
     width: calc((100% - var(--drawerWidth)) / 2);
