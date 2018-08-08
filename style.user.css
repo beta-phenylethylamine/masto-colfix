@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           Mastodon Column Fix
 @namespace      github.com/beta-phenylethylamine/masto-colfix
-@version        0.1.4
+@version        0.1.5
 @description    A userstyle to make columns fit to page (but with a min-width as fallback)
 @license        GPL-3.0-or-later
 @author         phenethylamine
-@preprocessor   stylus
+@preprocessor   default
 
 @var text drawerWidth "Drawer width" 350px
 @var text minWidth "Column min width" 400px
@@ -13,38 +13,38 @@
 
 @-moz-document domain("mastodon.social") /* This does have to be in quotes, although stylus doesn't like to preserve that */ {
   .drawer {
-      width: drawerWidth;
+      width: var(--drawerWidth);
   }
   .columns-area > div:nth-last-child(3):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 2);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 2);
   }
   .columns-area > div:nth-last-child(4):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 3);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 3);
   }
   .columns-area > div:nth-last-child(5):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 4);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 4);
   }
   .columns-area > div:nth-last-child(6):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 5);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 5);
   }
   .columns-area > div:nth-last-child(7):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 6);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 6);
   }
   .columns-area > div:nth-last-child(8):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 7);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 7);
   }
   .columns-area > div:nth-last-child(9):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 8);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 8);
   }
   .columns-area > div:nth-last-child(10):first-child ~ .column {
-      min-width: minWidth;
-      width: calc((100% - drawerWidth) / 9);
+      min-width: var(--minWidth);
+      width: calc((100% - var(--drawerWidth)) / 9);
   }
 }
