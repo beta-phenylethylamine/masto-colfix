@@ -11,7 +11,7 @@
 @var text minWidth "Column min width" 400px
 ==/UserStyle== */
 
-@-moz-document domain(mastodon.social) {
+@-moz-document domain("mastodon.social") {
   .drawer {
       width: drawerWidth;
   }
