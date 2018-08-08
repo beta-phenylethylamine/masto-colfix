@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Mastodon Column Fix
 @namespace      github.com/beta-phenylethylamine/masto-colfix
-@version        0.1.2
+@version        0.1.3
 @description    A userstyle to make columns fit to page (but with a min-width as fallback)
 @license        GPL-3.0-or-later
 @author         phenethylamine
@@ -11,8 +11,7 @@
 @var text minWidth "Column min width" 400px
 ==/UserStyle== */
 
-/* This does have to be in quotes, although stylus doesn't like to preserve that when you edit using the form above, so if the style isn't working, that may be why */
-@-moz-document domain("mastodon.social") {
+@-moz-document domain("mastodon.social") /* This does have to be in quotes, although stylus doesn't like to preserve that */ {
   .drawer {
       width: drawerWidth;
   }
