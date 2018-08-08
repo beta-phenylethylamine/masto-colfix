@@ -13,38 +13,33 @@
 
 @-moz-document domain("mastodon.social") /* This does have to be in quotes, although stylus doesn't like to preserve that */ {
   .drawer {
-      width: var(--drawerWidth);
+    width: var(--drawerWidth);
+  }
+  .column {
+    width: var(--minWidth)
   }
   .columns-area > div:nth-last-child(3):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 2);
+    width: calc((100% - var(--drawerWidth)) / 2);
   }
   .columns-area > div:nth-last-child(4):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 3);
+    width: calc((100% - var(--drawerWidth)) / 3);
   }
   .columns-area > div:nth-last-child(5):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 4);
+    width: calc((100% - var(--drawerWidth)) / 4);
   }
   .columns-area > div:nth-last-child(6):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 5);
+    width: calc((100% - var(--drawerWidth)) / 5);
   }
   .columns-area > div:nth-last-child(7):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 6);
+    width: calc((100% - var(--drawerWidth)) / 6);
   }
   .columns-area > div:nth-last-child(8):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 7);
+    width: calc((100% - var(--drawerWidth)) / 7);
   }
   .columns-area > div:nth-last-child(9):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 8);
+    width: calc((100% - var(--drawerWidth)) / 8);
   }
   .columns-area > div:nth-last-child(10):first-child ~ .column {
-      min-width: var(--minWidth);
-      width: calc((100% - var(--drawerWidth)) / 9);
+    width: calc((100% - var(--drawerWidth)) / 9);
   }
 }
